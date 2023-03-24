@@ -13,6 +13,3 @@ class VoltajeCorriente(models.Model):
     voltaje = models.DecimalField(max_digits=12, decimal_places=5, blank=True, null=True)
     corriente = models.DecimalField(max_digits=12, decimal_places=5, blank=True, null=True)
 
-    class Meta:
-        managed = True
-        db_table = 'voltaje_corriente'

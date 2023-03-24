@@ -23,15 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-7z62u-b!%_*vbm&kv#t#%qf*wq^3(15*f-q(dk*k&z=o3$y#gp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1","http://apirestdjango-1-env.eba-buqng22f.us-west-2.elasticbeanstalk.com"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'recibir_datos.apps.RecibirDatosConfig'
+    'recibir_datos.apps.RecibirDatosConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,7 +81,7 @@ DATABASES = {
         'NAME':'voltaje_corriente',
         'USER': 'root',
         'PASSWORD': 'Chevy0701',
-        'HOST': 'localhost',
+        'HOST': 'voltaje-corriente.ca2pbeuzrzi8.us-west-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }

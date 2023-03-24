@@ -6,3 +6,5 @@ class VoltajeCorrienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = VoltajeCorriente
         fields = ['id', 'voltaje', 'corriente']
+
+        

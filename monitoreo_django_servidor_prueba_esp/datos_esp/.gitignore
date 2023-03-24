@@ -1,0 +1,10 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+../.elasticbeanstalk/
+../comandos_linux.txt
+datos_esp/.ebextensions/
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+env_django_esp/*
+env_django_esp/
